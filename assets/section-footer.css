@@ -165,10 +165,6 @@
   text-align: center;
 }
 
-.footer__list-social.list-social:only-child {
-  justify-content: center;
-}
-
 .footer-block__newsletter {
   text-align: center;
   flex-grow: 1;
@@ -227,7 +223,6 @@
     gap: 3rem;
   }
 
-  .footer__list-social.list-social,
   .footer__follow-on-shop,
   .footer-block__newsletter {
     display: flex;
@@ -236,12 +231,6 @@
 
   .footer-block__newsletter {
     flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .footer-block__newsletter + .footer__list-social {
-    margin-top: 0;
   }
 }
 

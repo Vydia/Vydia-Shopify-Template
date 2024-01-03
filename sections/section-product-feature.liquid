@@ -1,0 +1,59 @@
+<div class="section product-feature">
+  <div class="container">
+    <div class="section-bkg">
+      <div class="frames">
+        <div class="frame top-left"></div>
+        <div class="frame top-right"></div>
+        <div class="frame bottom-left"></div>
+        <div class="frame bottom-right"></div>
+      </div>
+      <div class="product-feature-bkg" style="background-image:url('{{ section.settings.section_background_image |  image_url  }}');"></div>
+    </div>
+    <div class="section-content flex items-center justify-center w-svw">
+      <div class="product-feature-content-container">
+        <div class="product-headline">
+          {{ section.settings.section_headline }}
+        </div>
+        <div class="buttons">
+          <a class="btn btn-black" href="{{ section.settings.section_button_url }}">
+            {{ section.settings.section_button_text }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Section Product Feature",
+    "settings": [
+      {
+        "id": "section_headline",
+        "type": "textarea",
+        "label": "Section Headline"
+      },
+      {
+        "id": "section_background_image",
+        "type": "image_picker",
+        "label": "Section Background Image"
+      },
+      {
+        "id": "section_button_text",
+        "type": "text",
+        "label": "Section Button Text"
+      },
+      {
+        "id": "section_button_url",
+        "type": "url",
+        "label": "Section Button Url"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Section Product Feature",
+        "category": "Product"
+      }
+    ]
+  }
+{% endschema %}

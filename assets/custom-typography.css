@@ -1,0 +1,23 @@
+.fancy {
+  font-style: italic !important;
+  font-family: $font_fancy;
+  font-weight: 400;
+}
+
+.block {
+  font-weight: bold;
+  font-family: $font_base;
+  text-transform: uppercase;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

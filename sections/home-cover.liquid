@@ -1,0 +1,26 @@
+{{ 'home-cover.css' | asset_url | stylesheet_tag }}
+
+<div class="section home-cover">
+  {{ section.settings.cover_text }}
+  <h1>vydia</h1>
+</div>
+
+{% schema %}
+  {
+    "name": "Home Cover Slide",
+    "settings": [
+      {
+        "id": "cover_text",
+        "type": "text",
+        "label": "Cover Text",
+        "default": "Vydia"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Home Cover Slide",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}

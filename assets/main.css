@@ -1,0 +1,38 @@
+@import 'custom-variables.css';
+@import 'custom-mixins.css';
+@import 'custom-typography.css';
+@import 'custom-button.css';
+@import 'custom-modal.css';
+@import 'custom-header.css';
+@import 'custom-footer.css';
+@import 'custom-section-product-feature.css';
+
+@lost gutter 32px;
+@lost flexbox flex;
+
+.header-logo-container {
+  width: 105px;
+  height: auto;
+
+  a {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  svg {
+    @mixin imgFluid;
+  }
+}
+
+.headline {
+  lost-column: 1/2;
+}
+
+.container-full {
+  padding-left: $spacing_double;
+  padding-right: $spacing_double;
+  lost-center: 100%;
+}

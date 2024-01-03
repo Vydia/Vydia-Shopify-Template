@@ -1,0 +1,22 @@
+/* Variables */
+
+/* Spacing Variables */
+$spacing_single: 8px;
+$spacing_double: calc($spacing_single * 2);
+$spacing_triple: calc($spacing_single * 3);
+$spacing_quad: calc($spacing_single * 4);
+
+/* Colors */
+$bright_orange: #fb5006;
+$muted_green: #bebfb0;
+$grey: #717171;
+$black: #1a1a1a;
+$white: #f1f1f1;
+
+$color_primary: $bright_orange;
+$color_secondary: $muted_green;
+
+/* Fonts */
+
+$font_base: Helvetica Neue, Helvetica, Arial, sans-serif;
+$font_fancy: 'Noto Serif', serif;

@@ -1,0 +1,45 @@
+$btn_border_width: 2px;
+$btn_padding_h: $spacing_double;
+$btn_padding_w: $spacing_quad;
+
+.btn {
+  padding: $btn_padding_h $btn_padding_w;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 250ms all ease-in-out;
+
+  &.btn-sm {
+    padding: calc($btn_padding_h / 2) calc($btn_padding_w / 2);
+    font-size: 14px;
+  }
+
+  &.btn-lg {
+    padding: calc($btn_padding_h * 2) calc($btn_padding_w * 2);
+    font-size: 20px;
+  }
+}
+
+.btn-black {
+  border: $btn_border_width solid $white;
+  background: $black;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.btn-white {
+  border: $btn_border_width solid $black;
+  background: $white;
+  color: $black;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
